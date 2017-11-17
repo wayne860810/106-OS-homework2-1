@@ -1,1 +1,41 @@
-homework not found!!
+<div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="106-os-homework-2-1-構想書">106 OS homework 2-1 構想書</h1><blockquote>
+<p>組長：學號、姓名 B10415025 洪昱翔 <a href="mailto:B10415025@mail.ntust.edu.tw" target="_blank">B10415025@mail.ntust.edu.tw</a><br>
+組員：學號、姓名 B10415047 陳重佑 <a href="mailto:B10415047@mail.ntust.edu.tw" target="_blank">B10415047@mail.ntust.edu.tw</a><br>
+組員：學號、姓名 B10415049 陳祐丞 <a href="mailto:B10415049@mail.ntust.edu.tw" target="_blank">B10415049@mail.ntust.edu.tw</a></p>
+</blockquote><hr><h1 id="🤔-功能是什麼？">🤔 功能是什麼？</h1><ol>
+<li>將原本的排程 Round Robin 改成為 Priority Scheduling，並隨著使用及等待的次數自動加減每個 process 的 priority，使 process 不會因為 priority 過低而一直沒被執行。</li>
+<li>除了自動加減外，使用者也可以自行更動其 priority ，並可以隨時查詢現有 process 的 id, priority, state 及使用時間。</li>
+<li>關機功能。</li>
+</ol><hr><h1 id="😇-如何實作？">😇 如何實作？</h1><ul>
+<li>實踐 Priority Scheduling 先要有 default priority (ex: 5)，在 <code>scheduler()</code> 中透過迴圈比較每個 process 的 priority 來找到最大 priority 的 process，然而在 <code>swtch()</code> 回來到 <code>scheduler()</code> 前將執行完的 process 的 priority 降低，並提升其餘的 process。</li>
+<li>建立 <code>changePriority(pid, priorityValue)</code> ，來更改 priority 並 return pid，若無找到此 pid 則 return -1。</li>
+<li>時間方面可透過 lapic.c 中的 <code>cmostime()</code> 並建立 date.c 來取得。</li>
+<li>建立 <code>list()</code> 顯示列表，並透過 lock 以防在顯示的過程中其狀態改變。</li>
+<li>關機則運用 <code>outw()</code> 指令來控制。</li>
+</ul><hr><h1 id="🐻-預期成效（怎麼用、誰用）">🐻 預期成效（怎麼用、誰用）</h1><ul>
+<li>
+<p>使用者輸入 <code>list</code> 則可看見目前所有process的狀態 (pid, state, etc)</p>
+</li>
+<li>
+<p>使用者輸入 <code>changeP &lt;pid&gt; &lt;priority&gt;</code> 則將更新其 pid 的 priority</p>
+</li>
+<li>
+<p>使用者輸入 <code>shutdown</code> 則可離開 xv6</p>
+</li>
+</ul><hr><h1 id="👨‍👦‍👦-組員分工">👨‍👦‍👦 組員分工</h1><ul>
+<li>B10415025
+<ul>
+<li>Priority Scheduling 的實踐</li>
+</ul>
+</li>
+<li>B10415047
+<ul>
+<li><code>changeP &lt;pid&gt; &lt;priority&gt;</code>，<code>shutdown</code></li>
+</ul>
+</li>
+<li>B10415049
+<ul>
+<li><code>list</code></li>
+</ul>
+</li>
+</ul><hr><h1 id="📅-時程甘特圖">📅 時程甘特圖</h1><p><img src="https://imgur.com/TOVwSKa.png" alt=""></p><hr></div>
