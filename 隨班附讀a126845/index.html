@@ -1,1 +1,420 @@
-homework not found!!
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        106 OS homework 2-1 構想書 - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github-gist.min.css" integrity="sha256-tAflq+ymku3Khs+I/WcAneIlafYgDiOQ9stIHH985Wo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300italic,300|Source+Serif+Pro|Source+Code+Pro:400,300,500&subset=latin,latin-ext);.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{margin-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\A0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,\\30D2\30E9\30AE\30CE\89D2\30B4 Pro W3,Osaka,Meiryo,\\30E1\30A4\30EA\30AA,MS Gothic,"\FF2D\FF33   \30B4\30B7\30C3\30AF",sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,"\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF",sans-serif}.markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang TC,Microsoft JhengHei,\\5FAE\8EDF\6B63\9ED1,sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,\\5FAE\8EDF\6B63\9ED1UI,sans-serif}.markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,PingFang SC,Microsoft YaHei,\\5FAE\8F6F\96C5\9ED1,sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,\\5FAE\8F6F\96C5\9ED1UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:contain}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.unselectable{-moz-user-select:none;-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:Source Sans Pro,Helvetica,Arial,sans-serif;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid" style="position: relative;"><h1 id="106-os-homework-2-1-構想書"><a class="anchor hidden-xs" href="#106-os-homework-2-1-構想書" title="106-os-homework-2-1-構想書"><span class="octicon octicon-link"></span></a>106 OS homework 2-1 構想書</h1><h1 id="團隊成員"><a class="anchor hidden-xs" href="#團隊成員" title="團隊成員"><span class="octicon octicon-link"></span></a>團隊成員</h1><blockquote>
+<p>組長：a126845 / 盧贊名 / <a href="mailto:tsanmmmm2000@hotmail.com" target="_blank">tsanmmmm2000@hotmail.com</a><br>
+組員：o100442 / 徐煒員 / <a href="mailto:ax61316@hotmail.com" target="_blank">ax61316@hotmail.com</a></p>
+</blockquote><hr><h1 id="🤔-功能是什麼？"><a class="anchor hidden-xs" href="#🤔-功能是什麼？" title="🤔-功能是什麼？"><span class="octicon octicon-link"></span></a>🤔 功能是什麼？</h1><p>xv6 中很可惜的是沒有實作與 Linux 中內建的 perf 的效能量測指令類似的 system call，因此想要來挑戰實作一個類似 perf 的 system call。下面簡單介紹 perf 這個指令。</p><h2 id="perf-簡介"><a class="anchor hidden-xs" href="#perf-簡介" title="perf-簡介"><span class="octicon octicon-link"></span></a>Perf 簡介</h2><p>從 Linux 2.6.31 以後，內建了 perf（全名為 Performance Event）系統效能分析工具（Profiler tool），透過 tracepoint 以及核心內部的特殊計數器（counter），分析執行中的程式碼，例如執行次數等統計結果，來理解運行中的程式效能好壞以及瓶頸所在。</p><p>指令的使用方法，可以在 cmd 中下 <code>perf --help</code> 指令來取得更多的使用方法說明。</p><p>參考資料</p><ul>
+<li><a href="http://wiki.csie.ncku.edu.tw/embedded/perf-tutorial" target="_blank">Linux 效能分析工具：Perf</a></li>
+<li>詳細使用方法可以參考這篇教學文
+<ul>
+<li><em>Tutorial - Linux kernel profiling with perf - <a href="https://perf.wiki.kernel.org/index.php/Tutorial#Commands" target="_blank">Commands</a></em></li>
+</ul>
+</li>
+</ul><p>而我們預計在 xv6 上實作出 <code>perf list</code>、<code>perf top</code>、<code>perf stat</code> 等三種指令。（時間允許將繼續實作 <code>perf record / report</code> 以及 <code>perf sched</code> 作為附加功能）</p><hr><h1 id="😇-如何實作？"><a class="anchor hidden-xs" href="#😇-如何實作？" title="😇-如何實作？"><span class="octicon octicon-link"></span></a>😇 如何實作？</h1><h2 id="header-file"><a class="anchor hidden-xs" href="#header-file" title="header-file"><span class="octicon octicon-link"></span></a>Header File</h2><p>因為這個功能與 process 有很大的關係，因為要記錄的就是 process 中執行的某些重要數據。</p><p>首先，在主要的 process 的 header file 中，也就是 <code>proc.h</code> 創造一個我們設計的 system call function 的指令，並定義好資料結構，例如</p><pre><code class="clike hljs"><div class="wrapper"><div class="gutter linenumber"><span data-linenumber="1"></span>
+<span data-linenumber="2"></span>
+<span data-linenumber="3"></span>
+<span data-linenumber="4"></span>
+<span data-linenumber="5"></span>
+<span data-linenumber="6"></span>
+<span data-linenumber="7"></span>
+<span data-linenumber="8"></span>
+<span data-linenumber="9"></span>
+<span data-linenumber="10"></span></div><div class="code"><span class="hljs-keyword">struct</span> perf_data
+{
+    <span class="hljs-comment">// process ID</span>
+    <span class="hljs-keyword">pid_t</span> p_id;
+    <span class="hljs-comment">// counter</span>
+    <span class="hljs-keyword">int</span>   cnt1; 
+    <span class="hljs-keyword">float</span> cnt2;
+    <span class="hljs-comment">// state: sleep/wake?</span>
+    <span class="hljs-keyword">bool</span>  sleep;
+};
+</div></div></code></pre><h2 id="main-function"><a class="anchor hidden-xs" href="#main-function" title="main-function"><span class="octicon octicon-link"></span></a>Main Function</h2><p>主要實作的部分則是確認 process 在執行 function call 的時候會經過哪些路徑，並在這些數個重要路徑上，設定 tracepoint，當 process 通過時， counter 就加1。程式碼的部分則是加在 <code>proc.c</code> 當中，在執行 Round-Robin 的排程演算法中，額外插入 tracepoint 以及 performance counter 程式碼。</p><p>當最終程序執行完之後，就能夠得到執行過程的數據，並且得以評估其表現，實作細節請見 <a href="https://docs.google.com/document/d/1uEon9Pv7eYpGit1CcV8Kt-IbMVBAjURnf8VGLdDfI-0/edit" target="_blank">Google 文件</a></p><hr><h1 id="🐻-預期成效（怎麼用、誰用）"><a class="anchor hidden-xs" href="#🐻-預期成效（怎麼用、誰用）" title="🐻-預期成效（怎麼用、誰用）"><span class="octicon octicon-link"></span></a>🐻 預期成效（怎麼用、誰用）</h1><p>給使用者使用，指令與 <code>perf</code> 相同，後面再加上 <code>flag</code> ，來切換使用的模式。</p><pre><code>$ perf --help
+
+ usage: perf [--help] [OPTIONS] COMMAND [ARGS]
+
+ The most commonly used perf commands are:
+   list            List all symbolic event types
+   top             System profiling tool
+   stat            Run a command and gather performance counter statistics
+
+ See 'perf help COMMAND' for more information on a specific command.
+</code></pre><p>以下模擬操作方式與輸出結果。</p><h2 id="perf-list"><a class="anchor hidden-xs" href="#perf-list" title="perf-list"><span class="octicon octicon-link"></span></a>perf list</h2><p>印出 perf 可以觸發哪些 event</p><pre><code>$ perf list
+
+List of pre-defined events (to be used in -e):
+
+ cpu-cycles OR cycles                       [Hardware event]
+ instructions                               [Hardware event]
+ cache-misses                               [Hardware event]
+ branch-misses                              [Hardware event]
+
+ cpu-clock                                  [Software event]
+ page-faults OR faults                      [Software event]
+ context-switches OR cs                     [Software event]
+
+ L1-dcache-loads                            [Hardware cache event]
+ L1-dcache-load-misses                      [Hardware cache event]
+ L1-dcache-stores                           [Hardware cache event]
+ L1-dcache-store-misses                     [Hardware cache event]
+ L1-dcache-prefetches                       [Hardware cache event]
+ L1-dcache-prefetch-misses                  [Hardware cache event]
+ L1-icache-loads                            [Hardware cache event]
+ L1-icache-load-misses                      [Hardware cache event]
+ L1-icache-prefetches                       [Hardware cache event]
+ L1-icache-prefetch-misses                  [Hardware cache event]
+</code></pre><h2 id="perf-top"><a class="anchor hidden-xs" href="#perf-top" title="perf-top"><span class="octicon octicon-link"></span></a>perf top</h2><p>即時的分析各個函式在某個 event 上的熱點</p><ul>
+<li>[.]：user level</li>
+<li>[k]：kernel level</li>
+</ul><pre><code>$ perf top -h
+
+ Usage: perf top [&lt;options&gt;]
+
+    -a, --all-cpus        system-wide collection from all CPUs
+    -e, --event &lt;event&gt;   event selector. use 'perf list' to list available events
+</code></pre><pre><code>$ perf top
+
+Samples: 62K of event 'cycles', Event count (approx.): 5212870563
+Overhead  Shared Object                 Symbol
+  16.50%  [kernel]                      [k] acpi_pm_read
+   6.13%  [kernel]                      [k] copy_fpstate_to_sigframe
+   5.90%  [kernel]                      [k] finish_task_switch
+   5.37%  libc-2.23.so                  [.] __memcpy_sse2_unaligned
+   3.83%  [kernel]                      [k] get_signal
+   3.44%  [kernel]                      [k] __softirqentry_text_start
+   2.24%  libc-2.23.so                  [.] __GI___strcmp_ssse3
+   1.73%  [kernel]                      [k] tick_nohz_idle_enter
+   1.22%  perf-1565.map                 [.] 0x00007f2ba40033ca
+   1.02%  perf-1565.map                 [.] 0x00007f2ba402a499
+   0.81%  perf-1565.map                 [.] 0x00007f2ba40289dd
+   0.68%  perf-1565.map                 [.] 0x00007f2ba40033c3
+   0.67%  perf-1565.map                 [.] 0x00007f2ba40289e2
+   0.66%  perf-1565.map                 [.] 0x00007f2ba402a492
+   0.66%  [kernel]                      [k] __fpu__restore_sig
+   0.58%  perf-1565.map                 [.] 0x00007f2ba40289d6
+   0.56%  [kernel]                      [k] __lock_text_start
+   0.54%  libc-2.23.so                  [.] __memset_sse2
+   0.52%  perf-1565.map                 [.] 0x00007f2ba402a025
+   0.50%  perf-1565.map                 [.] 0x00007f2ba4028a20
+   0.47%  perf-1565.map                 [.] 0x00007f2b9c0053ca
+</code></pre><h2 id="perf-stat"><a class="anchor hidden-xs" href="#perf-stat" title="perf-stat"><span class="octicon octicon-link"></span></a>perf stat</h2><p>對要優化的目標進行特定或一系列的 event 檢查</p><pre><code>$ perf stat -h
+
+ Usage: perf stat [&lt;options&gt;] [&lt;command&gt;]
+ 
+    -a, --all-cpus        system-wide collection from all CPUs
+    -e, --event &lt;event&gt;   event selector. use 'perf list' to list available events
+    -p, --pid &lt;n&gt;         stat events on existing process id    
+</code></pre><pre><code>$ perf stat -a sleep 5
+
+ Performance counter stats for 'system wide':
+
+            5,099 cache-misses             #      0.005 M/sec
+          235,384 cache-references         #      0.246 M/sec
+    1,403,561,257 instructions             #      0.679 insns per cycle
+    2,066,201,729 cycles                   #   2160.227 M/sec
+              217 page-faults              #      0.000 M/sec
+               83 context-switches         #      0.000 M/sec
+       956.474238 task-clock-msecs         #      0.999 CPUs
+               
+
+       0.957617512  seconds time elapsed
+</code></pre><h2 id="perf-record--report（bonus）"><a class="anchor hidden-xs" href="#perf-record--report（bonus）" title="perf-record--report（bonus）"><span class="octicon octicon-link"></span></a>perf record / report（Bonus）</h2><p>比 stat 更細緻，reocrd 可以針對函式級別進行 event 統計 / report 產生採樣的結果</p><ul>
+<li>[.]：user level</li>
+<li>[k]：kernel level</li>
+</ul><pre><code>$ perf record -h
+
+ Usage: perf record [&lt;options&gt;] [&lt;command&gt;]
+    or: perf record [&lt;options&gt;] -- &lt;command&gt; [&lt;options&gt;]
+
+    -a, --all-cpus        system-wide collection from all CPUs
+    -e, --event &lt;event&gt;   event selector. use 'perf list' to list available events
+</code></pre><pre><code>$ perf record -a sleep 5
+$ perf report
+
+# Events: 354  cycles
+#
+# Overhead          Command               Shared Object  Symbol
+# ........  ...............  ..........................  .................................
+#
+    13.20%          swapper  [kernel.kallsyms]           [k] read_hpet
+     7.53%          swapper  [kernel.kallsyms]           [k] mwait_idle_with_hints
+     4.40%    perf_2.6.38-8  [kernel.kallsyms]           [k] _raw_spin_unlock_irqrestore
+     4.07%    perf_2.6.38-8  perf_2.6.38-8               [.] 0x34e1b
+     3.88%    perf_2.6.38-8  [kernel.kallsyms]           [k] format_decode
+</code></pre><h2 id="perf-sched（bonus）"><a class="anchor hidden-xs" href="#perf-sched（bonus）" title="perf-sched（bonus）"><span class="octicon octicon-link"></span></a>perf sched（Bonus）</h2><p>sched record 可以蒐集排程器相關數據 / sched latency 產生採樣結果，主要有下列項目</p><ul>
+<li>Task：name 與 pid</li>
+<li>Runtime：實際運行時間</li>
+<li>Switches：context switch 發生次數</li>
+<li>Average delay：平均延遲時間</li>
+<li>Maximum delay：最大延遲時間</li>
+</ul><pre><code>$ perf sched -h
+
+ Usage: perf sched [&lt;options&gt;] {record|latency}
+</code></pre><pre><code>$ perf sched record sleep 5
+$ perf sched latency
+
+ -------------------------------------------------------------------------------------
+  Task                  |  Runtime ms | Switches | Average delay ms | Maximum delay ms | 
+ -------------------------------------------------------------------------------------
+  :14086:14086          |    0.095 ms |        2 | avg:    3.445 ms | max:    6.891 ms | 
+  gnome-session:13792   |   31.713 ms |      102 | avg:    0.160 ms | max:    5.992 ms | 
+  metacity:14038        |   49.220 ms |      637 | avg:    0.066 ms | max:    5.942 ms | 
+  gconfd-2:13971        |   48.587 ms |      777 | avg:    0.047 ms | max:    5.793 ms | 
+  gnome-power-man:14050 |  140.601 ms |      434 | avg:    0.097 ms | max:    5.367 ms | 
+  python:14049          |  114.694 ms |      125 | avg:    0.120 ms | max:    5.343 ms | 
+  kblockd/1:236         |    3.458 ms |      498 | avg:    0.179 ms | max:    5.271 ms | 
+  Xorg:3122             | 1073.107 ms |     2920 | avg:    0.030 ms | max:    5.265 ms | 
+  dbus-daemon:2063      |   64.593 ms |      665 | avg:    0.103 ms | max:    4.730 ms | 
+  :14040:14040          |   30.786 ms |      255 | avg:    0.095 ms | max:    4.155 ms | 
+  events/1:8            |    0.105 ms |       13 | avg:    0.598 ms | max:    3.775 ms | 
+  console-kit-dae:2080  |   14.867 ms |      152 | avg:    0.142 ms | max:    3.760 ms | 
+  gnome-settings-:14023 |  572.653 ms |      979 | avg:    0.056 ms | max:    3.627 ms | 
+ -----------------------------------------------------------------------------------
+  TOTAL:                |  3144.817 ms |    11654 | 
+ --------------------------------------------------- 
+</code></pre><hr><h1 id="👨‍👦‍👦-組員分工"><a class="anchor hidden-xs" href="#👨‍👦‍👦-組員分工" title="👨‍👦‍👦-組員分工"><span class="octicon octicon-link"></span></a>👨‍👦‍👦 組員分工</h1><table>
+<thead>
+<tr>
+<th style="text-align:left">功能</th>
+<th style="text-align:left">負責組員</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">perf list</td>
+<td style="text-align:left">盧贊名 / 徐煒員</td>
+</tr>
+<tr>
+<td style="text-align:left">perf top</td>
+<td style="text-align:left">盧贊名</td>
+</tr>
+<tr>
+<td style="text-align:left">perf stat</td>
+<td style="text-align:left">徐煒員</td>
+</tr>
+</tbody>
+</table><hr><h1 id="📅-時程甘特圖"><a class="anchor hidden-xs" href="#📅-時程甘特圖" title="📅-時程甘特圖"><span class="octicon octicon-link"></span></a>📅 時程甘特圖</h1><pre class="mermaid" data-processed="true"><svg id="mermaidChart0" width="100%" xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 696 340"><style type="text/css" title="mermaid-svg-internal-css">/*  */
+* { box-sizing: border-box;}
+.mermaid .section { stroke: none; opacity: 0.2;}
+.mermaid .section0 { fill: rgba(102, 102, 255, 0.49);}
+.mermaid .section2 { fill: rgb(255, 244, 0);}
+.mermaid .section1, .mermaid .section3 { fill: white; opacity: 0.2;}
+.mermaid .sectionTitle0 { fill: rgb(51, 51, 51);}
+.mermaid .sectionTitle1 { fill: rgb(51, 51, 51);}
+.mermaid .sectionTitle2 { fill: rgb(51, 51, 51);}
+.mermaid .sectionTitle { text-anchor: start; font-size: 11px;}
+.mermaid .grid .tick { stroke: lightgrey; opacity: 0.3; shape-rendering: crispEdges;}
+.mermaid .grid path { stroke-width: 0;}
+.mermaid .today { fill: none; stroke: red; stroke-width: 2px;}
+.mermaid .task { stroke-width: 2;}
+.mermaid .taskText { text-anchor: middle; font-size: 11px;}
+.mermaid .taskTextOutsideRight { fill: black; text-anchor: start; font-size: 11px;}
+.mermaid .taskTextOutsideLeft { fill: black; text-anchor: end; font-size: 11px;}
+.mermaid .taskText0, .mermaid .taskText1, .mermaid .taskText2, .mermaid .taskText3 { fill: white;}
+.mermaid .task0, .mermaid .task1, .mermaid .task2, .mermaid .task3 { fill: rgb(138, 144, 221); stroke: rgb(83, 79, 188);}
+.mermaid .taskTextOutside0, .mermaid .taskTextOutside2 { fill: black;}
+.mermaid .taskTextOutside1, .mermaid .taskTextOutside3 { fill: black;}
+.mermaid .active0, .mermaid .active1, .mermaid .active2, .mermaid .active3 { fill: rgb(191, 199, 255); stroke: rgb(83, 79, 188);}
+.mermaid .activeText0, .mermaid .activeText1, .mermaid .activeText2, .mermaid .activeText3 { fill: black !important;}
+.mermaid .done0, .mermaid .done1, .mermaid .done2, .mermaid .done3 { stroke: grey; fill: lightgrey; stroke-width: 2;}
+.mermaid .doneText0, .mermaid .doneText1, .mermaid .doneText2, .mermaid .doneText3 { fill: black !important;}
+.mermaid .crit0, .mermaid .crit1, .mermaid .crit2, .mermaid .crit3 { stroke: rgb(255, 136, 136); fill: red; stroke-width: 2;}
+.mermaid .titleText { text-anchor: middle; font-size: 18px; fill: black;}
+/*  */
+</style><g></g><g class="grid" transform="translate(75, 290)"><g class="tick" transform="translate(0,0)" style="opacity: 1;"><line y2="-255" x2="0"></line><text dy="1em" y="3" x="0" fill="#000" stroke="none" font-size="10" style="text-anchor: middle;">w. 01</text></g><g class="tick" transform="translate(91,0)" style="opacity: 1;"><line y2="-255" x2="0"></line><text dy="1em" y="3" x="0" fill="#000" stroke="none" font-size="10" style="text-anchor: middle;">w. 02</text></g><g class="tick" transform="translate(182,0)" style="opacity: 1;"><line y2="-255" x2="0"></line><text dy="1em" y="3" x="0" fill="#000" stroke="none" font-size="10" style="text-anchor: middle;">w. 03</text></g><g class="tick" transform="translate(273,0)" style="opacity: 1;"><line y2="-255" x2="0"></line><text dy="1em" y="3" x="0" fill="#000" stroke="none" font-size="10" style="text-anchor: middle;">w. 04</text></g><g class="tick" transform="translate(364,0)" style="opacity: 1;"><line y2="-255" x2="0"></line><text dy="1em" y="3" x="0" fill="#000" stroke="none" font-size="10" style="text-anchor: middle;">w. 05</text></g><g class="tick" transform="translate(455,0)" style="opacity: 1;"><line y2="-255" x2="0"></line><text dy="1em" y="3" x="0" fill="#000" stroke="none" font-size="10" style="text-anchor: middle;">w. 06</text></g><g class="tick" transform="translate(546,0)" style="opacity: 1;"><line y2="-255" x2="0"></line><text dy="1em" y="3" x="0" fill="#000" stroke="none" font-size="10" style="text-anchor: middle;">w. 07</text></g><path class="domain" d="M0,0V0H546V0"></path></g><g><rect x="0" y="48" width="658.5" height="24" class="section section0"></rect><rect x="0" y="72" width="658.5" height="24" class="section section0"></rect><rect x="0" y="96" width="658.5" height="24" class="section section1"></rect><rect x="0" y="120" width="658.5" height="24" class="section section1"></rect><rect x="0" y="144" width="658.5" height="24" class="section section1"></rect><rect x="0" y="168" width="658.5" height="24" class="section section2"></rect><rect x="0" y="192" width="658.5" height="24" class="section section2"></rect><rect x="0" y="216" width="658.5" height="24" class="section section2"></rect><rect x="0" y="240" width="658.5" height="24" class="section section0"></rect><rect x="0" y="264" width="658.5" height="24" class="section section1"></rect></g><g><rect rx="3" ry="3" x="75" y="50" width="13" height="20" class="task task0"></rect><rect rx="3" ry="3" x="88" y="74" width="13" height="20" class="task task0"></rect><rect rx="3" ry="3" x="101" y="98" width="13" height="20" class="task task1"></rect><rect rx="3" ry="3" x="101" y="122" width="390" height="20" class="task active1"></rect><rect rx="3" ry="3" x="101" y="146" width="390" height="20" class="task done1"></rect><rect rx="3" ry="3" x="101" y="170" width="481" height="20" class="task task2"></rect><rect rx="3" ry="3" x="101" y="194" width="481" height="20" class="task task2"></rect><rect rx="3" ry="3" x="101" y="218" width="481" height="20" class="task task2"></rect><rect rx="3" ry="3" x="582" y="242" width="13" height="20" class="task crit0"></rect><rect rx="3" ry="3" x="595" y="266" width="26" height="20" class="task task1"></rect><text font-size="11" x="93" y="63.5" text-height="20" class="taskTextOutsideRight taskTextOutside0">討論架構 [11/18 ~ 11/19]       </text><text font-size="11" x="106" y="87.5" text-height="20" class="taskTextOutsideRight taskTextOutside0">訂定規格 [11/19 ~ 11/20]         </text><text font-size="11" x="119" y="111.5" text-height="20" class="taskTextOutsideRight taskTextOutside1">perf list [11/21 ~ 11/22]      </text><text font-size="11" x="296" y="135.5" text-height="20" class="taskText taskText1 activeText1">perf top [11/21 ~ 12/21]        </text><text font-size="11" x="296" y="159.5" text-height="20" class="taskText taskText1 doneText1">perf stat [11/21 ~ 12/21]     </text><text font-size="11" x="341.5" y="183.5" text-height="20" class="taskText taskText2">perf list [11/21 ~ 12/28]       </text><text font-size="11" x="341.5" y="207.5" text-height="20" class="taskText taskText2">perf top [11/21 ~ 12/28]       </text><text font-size="11" x="341.5" y="231.5" text-height="20" class="taskText taskText2">perf stat [11/21 ~ 12/28]       </text><text font-size="11" x="577" y="255.5" text-height="20" class="taskTextOutsideLeft taskTextOutside0 critText0">發行 [12/29]    </text><text font-size="11" x="590" y="279.5" text-height="20" class="taskTextOutsideLeft taskTextOutside1">維護 [12/30 ~ ]    </text></g><g><text x="10" y="74" class="sectionTitle sectionTitle0">規格與設計</text><text x="10" y="134" class="sectionTitle sectionTitle1">實作</text><text x="10" y="206" class="sectionTitle sectionTitle2">整合與測試</text><text x="10" y="254" class="sectionTitle sectionTitle0">發行</text><text x="10" y="278" class="sectionTitle sectionTitle1">維護</text></g><g class="today"><line x1="4142" x2="4142" y1="25" y2="315" class="today"></line></g><text x="348" y="25" class="titleText">甘特圖</text></svg></pre><hr></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li class=""><a href="#106-os-homework-2-1-構想書">106 OS homework 2-1 構想書</a></li><li><a href="#團隊成員">團隊成員</a></li><li><a href="#🤔-功能是什麼？">🤔 功能是什麼？</a><ul class="nav"><li><a href="#perf-簡介">Perf 簡介</a></li></ul></li><li><a href="#😇-如何實作？">😇 如何實作？</a><ul class="nav"><li><a href="#header-file">Header File</a></li><li><a href="#main-function">Main Function</a></li></ul></li><li><a href="#🐻-預期成效（怎麼用、誰用）">🐻 預期成效（怎麼用、誰用）</a><ul class="nav"><li><a href="#perf-list">perf list</a></li><li><a href="#perf-top">perf top</a></li><li><a href="#perf-stat">perf stat</a></li><li><a href="#perf-record--report（bonus）">perf record / report（Bonus）</a></li><li><a href="#perf-sched（bonus）">perf sched（Bonus）</a></li></ul></li><li><a href="#👨‍👦‍👦-組員分工">👨‍👦‍👦 組員分工</a></li><li><a href="#📅-時程甘特圖">📅 時程甘特圖</a></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li class=""><a href="#106-os-homework-2-1-構想書">106 OS homework 2-1 構想書</a></li><li><a href="#團隊成員">團隊成員</a></li><li><a href="#🤔-功能是什麼？">🤔 功能是什麼？</a><ul class="nav"><li><a href="#perf-簡介">Perf 簡介</a></li></ul></li><li><a href="#😇-如何實作？">😇 如何實作？</a><ul class="nav"><li><a href="#header-file">Header File</a></li><li><a href="#main-function">Main Function</a></li></ul></li><li><a href="#🐻-預期成效（怎麼用、誰用）">🐻 預期成效（怎麼用、誰用）</a><ul class="nav"><li><a href="#perf-list">perf list</a></li><li><a href="#perf-top">perf top</a></li><li><a href="#perf-stat">perf stat</a></li><li><a href="#perf-record--report（bonus）">perf record / report（Bonus）</a></li><li><a href="#perf-sched（bonus）">perf sched（Bonus）</a></li></ul></li><li><a href="#👨‍👦‍👦-組員分工">👨‍👦‍👦 組員分工</a></li><li><a href="#📅-時程甘特圖">📅 時程甘特圖</a></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
